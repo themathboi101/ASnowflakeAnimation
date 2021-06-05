@@ -14,7 +14,7 @@ function setup() {
   girl=createSprite(500,270,50,50);
   girl.shapeColor="green";
 
-  snowIMG=loadImage("snow4.webp");
+  
   
 }
 
@@ -40,9 +40,9 @@ function bound(){
 function dropSnowflakes(){
   if(x/60===0){
     snow=new Snow((random(1,800)),800,50,50);
-    snow.addImage(snowIMG);
-
+    
+    snow.display();
   }
   
-  Snow.display();
+  
 }
