@@ -20,7 +20,7 @@ function setup() {
 
 function draw() {
   background(bg);
-  x=x+1;
+  
   
   if(gameState===0){
     boy.velocityX=-5;
@@ -31,6 +31,7 @@ function draw() {
   drawSprites();
 }
 function bound(){
+  x=x+1;
   if(girl.x===300){
     boy.velocityX=0;
     girl.velocityX=0;
